@@ -2,15 +2,19 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { UsersComponent } from './users.component';
 
+import { NewComponent } from './new/new.component';
+
 @NgModule({
   imports: [
     CommonModule
   ],
   declarations: [
-      UsersComponent
+      UsersComponent,
+      NewComponent
   ],
   exports:[
-    UsersComponent
+    UsersComponent,
+      NewComponent
   ],
 })
 export class UsersModule { }
