@@ -1,20 +1,25 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { UsersComponent } from './users.component';
+import {NgModule} from '@angular/core';
+import {CommonModule} from '@angular/common';
+import {UsersComponent} from './users.component';
 
-import { NewComponent } from './new/new.component';
+import {NewComponent} from './new/new.component';
+import {LoginComponent} from './login/login.component';
 
 @NgModule({
-  imports: [
-    CommonModule
-  ],
-  declarations: [
-      UsersComponent,
-      NewComponent
-  ],
-  exports:[
-    UsersComponent,
-      NewComponent
-  ],
+    imports: [
+        CommonModule
+    ],
+    declarations: [
+        UsersComponent,
+        NewComponent,
+        LoginComponent
+    ],
+    exports: [
+        UsersComponent,
+        // NewComponent,
+        // LoginComponent
+
+    ],
 })
-export class UsersModule { }
+export class UsersModule {
+}
