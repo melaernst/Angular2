@@ -3,9 +3,12 @@ import {NgModule} from '@angular/core';
 import {FormsModule} from '@angular/forms';
 import {HttpModule} from '@angular/http';
 
-import {AppComponent} from './app.component';
 import {UsersModule} from "./users/users.module";
+import {MaterialModule MdIconRegistry} from "@angular/material";
+import 'hammerjs';
 
+
+import {AppComponent} from './app.component';
 
 @NgModule({
     declarations: [
@@ -17,9 +20,10 @@ import {UsersModule} from "./users/users.module";
         BrowserModule,
         FormsModule,
         HttpModule,
-        UsersModule
+        UsersModule,
+        MaterialModule
     ],
-    providers: [],
+    providers: [MdIconRegistry, HttpModule],
     bootstrap: [AppComponent]
 })
 export class AppModule {

@@ -4,10 +4,12 @@ import {UsersComponent} from './users.component';
 
 import {NewComponent} from './new/new.component';
 import {LoginComponent} from './login/login.component';
+import { MdIconModule } from '@angular/material/icon'
 
 @NgModule({
     imports: [
-        CommonModule
+        CommonModule,
+        MdIconModule
     ],
     declarations: [
         UsersComponent,
